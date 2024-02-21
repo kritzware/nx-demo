@@ -1,0 +1,4 @@
+{
+  "extends": "@curve/config/tsconfig.json",
+  "include": ["src/**/*.ts"]
+}

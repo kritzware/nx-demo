@@ -1,15 +1,23 @@
 {
-  "name": "curve",
+  "name": "@curve/dev",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many -t build",
+    "dev": "nx run-many -t dev",
+    "lint": "nx run-many -t lint",
+    "vis": "nx dep-graph"
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "@nx/js": "18.0.4",
-    "nx": "18.0.4"
+    "@types/node": "~18.16.9",
+    "nx": "18.0.4",
+    "prettier": "^2.6.2",
+    "typescript": "~5.3.2"
   },
   "workspaces": [
-    "packages/*"
-  ]
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {}
 }
