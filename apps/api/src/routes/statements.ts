@@ -1,11 +1,10 @@
-import { Statement } from '@curve/models';
+import { someSharedLogicMethod } from '@curve/models';
 import express from 'express';
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  const statement = new Statement();
-  const total = statement.someSharedLogicMethod();
+  const total = someSharedLogicMethod();
   res.send({ total });
 });
 

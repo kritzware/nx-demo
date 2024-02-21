@@ -1,13 +1,11 @@
-export class Statement {
-  someSharedLogicMethod() {
-    return this.getTotal() + 50;
-  }
+export function someSharedLogicMethod() {
+  return getTotal() + 42;
+}
 
-  getTotal() {
-    return 100;
-  }
+function getTotal() {
+  return 100;
+}
 
-  process() {
-    return new Promise((resolve) => setTimeout(resolve, 3000));
-  }
+export function process(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
