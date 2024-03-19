@@ -1,0 +1,11 @@
+{
+  "name": "@curveroyaltysystems/curve-shared-logic",
+  "version": "0.0.27",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
