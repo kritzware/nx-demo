@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nx run-many -t build",
-    "dev": "nx run-many -t dev",
+    "dev": "nx run-many -t dev --output-style=stream",
     "lint": "nx run-many -t lint",
     "graph": "nx dep-graph"
   },
